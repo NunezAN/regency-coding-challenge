@@ -155,3 +155,107 @@ header {
     }
   }
 }
+.locations {
+  display: flex;
+  flex-direction: column;
+  padding: 70px 35px 0px 35px;
+  .locations__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    background-color: #00945f;
+    line-height: 1.292;
+    text-align: center;
+    height: 60px;
+    width: 100%;
+  }
+  .locations__para {
+    padding: 30px 70px;
+    font-size: 18px;
+    color: rgb(136, 136, 136);
+    background-color: #ebf7f5;
+    line-height: 1.722;
+    text-align: left;
+  }
+}
+footer {
+  padding: 40px 35px;
+  border-top: 2px solid rgb(0, 148, 95);
+  .links {
+    padding-bottom: 30px;
+    display: flex;
+    gap: 12px;
+    .link__facebook {
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #3c5b9b;
+      color: white;
+      height: 30px;
+      width: 30px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .link__twitter {
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #2daae1;
+      color: white;
+      height: 30px;
+      width: 30px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .link__linkedin {
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #0173b2;
+      color: white;
+      height: 30px;
+      width: 30px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .link__youtube {
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #e14e42;
+      color: white;
+      height: 30px;
+      width: 30px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .footer__para {
+    font-size: 11px;
+    color: rgb(102, 102, 102);
+    line-height: 1.2;
+    padding-bottom: 30px;
+  }
+  .footer__specialText {
+    text-decoration: underline;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .footer_privacyStatement {
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    line-height: 1.333;
+  }
+}
