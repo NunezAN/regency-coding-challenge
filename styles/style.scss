@@ -13,6 +13,9 @@
   background-color: rgb(102, 102, 102);
   width: 1px;
 }
+.benefits__divider--mobile {
+  display: none;
+}
 
 @mixin title {
   font-size: 30px;
@@ -33,6 +36,12 @@
   color: rgb(136, 136, 136);
   line-height: 1.722;
   text-align: left;
+}
+@mixin mobile__divider {
+  border-width: 0.4px;
+  border-color: rgb(102, 102, 102);
+  border-style: solid;
+  width: 100%;
 }
 header {
   padding: 64px 36px 52px 36px;
@@ -301,5 +310,86 @@ footer {
       line-height: 1.602;
       text-align: center;
     }
+  }
+}
+
+// Responsive Mobile
+@media (max-width: 550px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .landing {
+    .hero__img {
+      height: 200px;
+      object-fit: fill;
+      width: 100%;
+    }
+    .hero__para {
+      padding: 30px 20px 50px 20px !important;
+    }
+  }
+  .benefits {
+    padding: 0px 20px;
+    .benefits__info--top {
+      flex-direction: column;
+      gap: 20px;
+      .benefits__info--left {
+        padding: 0;
+        width: 100%;
+      }
+      .benefits__info--right {
+        padding: 0;
+        width: 100%;
+      }
+      .divider-vertical {
+        @include mobile__divider();
+      }
+    }
+    .benefits__info--bottom {
+      flex-direction: column;
+      padding: 0;
+      gap: 20px;
+      .benefits__info--left {
+        padding: 0;
+        width: 100%;
+      }
+      .benefits__info--right {
+        padding: 0;
+        width: 100%;
+      }
+      .divider-vertical {
+        @include mobile__divider();
+      }
+    }
+    .benefits__divider--mobile {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      display: block;
+      @include mobile__divider();
+    }
+  }
+  .reviews {
+    display: flex;
+    flex-direction: column;
+  }
+  .locations {
+    padding: 40px 20px 30px 20px;
+    .locations__para {
+      padding: 20px 10px;
+    }
+  }
+  .reviews {
+    padding: 0px 10px;
+    .review__sm {
+      padding-bottom: 40px;
+    }
+    .review__lg {
+      padding: 0px 24px 40px 24px;
+    }
+  }
+  footer {
+    padding: 20px 20px;
   }
 }

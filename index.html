@@ -16,7 +16,11 @@
       <img src="./images/logo.png" alt="" />
     </header>
     <section class="landing">
-      <img class="hero__img" src="./images/hero.png" alt="" />
+      <picture class="hero__img">
+        <source media="(min-width: 551px)" srcset="./images/hero.png" />
+        <img class="hero__img" src="./images/hero-mobile.png" alt="" />
+      </picture>
+      <!-- <img class="hero__img" src="./images/hero.png" alt="" /> -->
       <div class="hero__description">
         <h2 class="hero__title">Our Investment in you.</h2>
         <div class="divider-horizontal"></div>
@@ -58,6 +62,7 @@
           </p>
         </div>
       </div>
+      <div class="benefits__divider--mobile"></div>
       <div class="benefits__info--bottom">
         <div class="benefits__info--left">
           <h3 class="benefits__info--title">Closing on-time, every time</h3>

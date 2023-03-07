@@ -17,6 +17,10 @@
   width: 1px;
 }
 
+.benefits__divider--mobile {
+  display: none;
+}
+
 header {
   padding: 64px 36px 52px 36px;
 }
@@ -324,4 +328,92 @@ footer .footer_privacyStatement {
   color: rgba(0, 148, 95, 0.839);
   line-height: 1.602;
   text-align: center;
+}
+
+@media (max-width: 550px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .landing .hero__img {
+    height: 200px;
+    -o-object-fit: fill;
+       object-fit: fill;
+    width: 100%;
+  }
+  .landing .hero__para {
+    padding: 30px 20px 50px 20px !important;
+  }
+  .benefits {
+    padding: 0px 20px;
+  }
+  .benefits .benefits__info--top {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .benefits .benefits__info--top .benefits__info--left {
+    padding: 0;
+    width: 100%;
+  }
+  .benefits .benefits__info--top .benefits__info--right {
+    padding: 0;
+    width: 100%;
+  }
+  .benefits .benefits__info--top .divider-vertical {
+    border-width: 0.4px;
+    border-color: rgb(102, 102, 102);
+    border-style: solid;
+    width: 100%;
+  }
+  .benefits .benefits__info--bottom {
+    flex-direction: column;
+    padding: 0;
+    gap: 20px;
+  }
+  .benefits .benefits__info--bottom .benefits__info--left {
+    padding: 0;
+    width: 100%;
+  }
+  .benefits .benefits__info--bottom .benefits__info--right {
+    padding: 0;
+    width: 100%;
+  }
+  .benefits .benefits__info--bottom .divider-vertical {
+    border-width: 0.4px;
+    border-color: rgb(102, 102, 102);
+    border-style: solid;
+    width: 100%;
+  }
+  .benefits .benefits__divider--mobile {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    border-width: 0.4px;
+    border-color: rgb(102, 102, 102);
+    border-style: solid;
+    width: 100%;
+  }
+  .reviews {
+    display: flex;
+    flex-direction: column;
+  }
+  .locations {
+    padding: 40px 20px 30px 20px;
+  }
+  .locations .locations__para {
+    padding: 20px 10px;
+  }
+  .reviews {
+    padding: 0px 10px;
+  }
+  .reviews .review__sm {
+    padding-bottom: 40px;
+  }
+  .reviews .review__lg {
+    padding: 0px 24px 40px 24px;
+  }
+  footer {
+    padding: 20px 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
